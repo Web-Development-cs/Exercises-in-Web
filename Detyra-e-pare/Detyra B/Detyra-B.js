@@ -13,7 +13,7 @@ return document.write("Shuma e pesëdhjetë numrave natyrorë të parë natyror�
 }
 /* Funksioni që kthen si rezultat perimetrin dhe syprinën e trekendeshit*/
 function syprina1(a,b,c,ha){
-    let syprina = (a*ha);
+    let syprina = (a*ha)/2;
     let perimetri = (a+b+c);
 
     document.write("Perimetri i trekëndëshit me brinjë a,b,c është: " + perimetri + " cm.");
