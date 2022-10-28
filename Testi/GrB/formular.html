@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Krijimi i formularit</title>
+    </head>
+<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #6b8695;
+			font-family: Verdana;
+			text-align: center;
+		}
+    #titulli{
+	text-shadow: 2px 2px 4px white;
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+}
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: rgb(224, 240, 244);
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: -1px 2px 10px 4px white;
+		}
+		/* Styling form-control Class */
+		.forma {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.forma label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+
+		.forma input,
+		.forma select,
+		.forma textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling forma Radio
+		button and Checkbox */
+		.forma input[type="radio"],
+		.forma input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+    button {
+			background-color: #6b8695;
+			border: 1px solid #777;
+			border-radius: 7px;
+			font-weight: bold;
+			font-size: 21px;
+            height: 40px;
+            width: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-shadow: 2px 2px 4px rgb(191, 191, 191);
+
+		}
+
+</style>
+<body>
+   <h2 id="titulli">Krijimi i formularit në HTML</h2>
+   <!-- Create Form -->
+	<form id="form">
+    	<div class="forma">
+			<label for="name" id="label-name">Emri dhe Mbiemri:</label>
+			<input type="text" id="name" placeholder="Shkruani emrin dhe mbiemrin tuaj." />
+		</div>
+        
+		<div class="forma">
+			<label for="age" id="label-age">Mosha:</label>
+			<input type="number" id="age" placeholder="Shkruani moshën." />
+		</div>
+
+		<div class="forma">
+			<label for="email" id="label-email">Email adresa:</label>
+			<input type="email" id="email" placeholder="Shkruani email adresën tuaj." />
+		</div>
+
+		<div class="forma">
+			<label for="role" id="label-role">Universiteti:</label>
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Universiteti i Prishtinës</option>
+				<option value="intern">Universiteti i Tiranës</option>
+				<option value="professional">Universiteti i Ljubljanës</option>
+				<option value="other">Tjetër</option>
+			</select>
+		</div>
+
+    	<div class="forma">
+			<label for="name" id="label-name">Vendbanimi:</label>
+			<textarea name="comment" id="comment" placeholder="Shkruani adresën e vendbanimit tuaj.">
+			</textarea>		
+        </div>
+
+		<div class="forma">
+			<label>Nacionaliteti:</label>
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio" id="recommed-1" name="recommed">Kosovar</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"id="recommed-2"name="recommed">Shqiptar</input>
+			</label>
+			<label for="recommed-3"><input type="radio"id="recommed-3"name="recommed">Tjetër</input>
+			</label>
+		</div>
+
+		<div class="forma">
+			<label>Gjuhët programuese
+				<small>(Bëj check ato që keni eksperiencë)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1"><input type="checkbox"
+					name="inp">jQuery</input></label>
+			<label for="inp-2"><input type="checkbox"
+					name="inp">C#</input></label>
+			<label for="inp-3"><input type="checkbox"
+					name="inp">Java</input></label>
+			<label for="inp-4"><input type="checkbox"
+					name="inp">JavaScript</input></label>
+			<label for="inp-5"><input type="checkbox"
+					name="inp">Python</input></label>
+			<label for="inp-6"><input type="checkbox"
+					name="inp">R</input></label>
+			<label for="inp-7"><input type="checkbox"
+					name="inp">MySql</input></label>
+			<label for="inp-7"><input type="checkbox"
+					name="inp">MATLAB</input></label>
+			<label for="inp-7"><input type="checkbox"
+					name="inp">HTML</input></label>
+			<label for="inp-7"><input type="checkbox"
+					name="inp">CSS</input></label>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
